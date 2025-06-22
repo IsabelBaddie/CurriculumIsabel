@@ -1,2 +1,70 @@
 // For information on how to create your own theme, please see:
 // http://ionicframework.com/docs/theming/
+
+:root {
+  --rosa-claro: #f5c4da;
+  --rosa-medio: #f4a3c8;
+  --rosa-oscuro: #b46494;
+  --negro: #2d182d;
+  --cereza-medio: #c42454; 
+  --cereza-oscuro: #8c2c44; 
+  --azul: #294459; 
+  --blanco: #ffffff; 
+}
+
+.bg-rosaclaro {
+  background-color: var(--rosa-claro);
+  
+}
+
+.bg-rosamedio {
+  background-color: var(--rosa-medio);
+}
+
+.bg-rosaoscuro {
+  background-color: var(--rosa-oscuro);
+}
+
+.bg-cerezamedio {
+  background-color: var(--cereza-medio);
+}
+
+.bg-cerezaoscuro {
+  background-color: var(--cereza-oscuro);
+}
+
+.text-rosamedio {
+  color: var(--rosa-medio);
+}
+
+.text-negro {
+  color: var(--negro);
+}
+
+.text-azul {
+  color: var(--azul) !important;
+}
+
+.text-cereza {
+  color: var(--cereza-oscuro) !important;
+}
+
+.text-blanco {
+  color: var(--blanco);
+}
+.bg-degradado-multiple {
+  background: linear-gradient(to right, #b46494, #d17eb0, #f4a3c8);
+}
+
+ion-button.bg-blanco {
+  --color: white; // color del texto
+  --border-color: var(--blanco);
+} 
+
+.contenedor-principal {
+  padding: 40px 20px; /* Arriba/abajo 40px, lados 20px */
+}
+
+ion-content.bg-rosaclaro {
+  --background: var(--rosa-claro); 
+}

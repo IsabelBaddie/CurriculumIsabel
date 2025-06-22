@@ -22,9 +22,6 @@ export const routes: Routes = [
     path: 'multiplataforma',
     loadComponent: () => import('./pages/multiplataforma/multiplataforma.page').then(m => m.MultiplataformaPage)
   },
-  {
-    path: 'tecnologias',
-    loadComponent: () => import('./pages/tecnologias/tecnologias.page').then( m => m.TecnologiasPage)
-  },
+
 ];
 

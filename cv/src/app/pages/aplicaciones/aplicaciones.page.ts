@@ -1,20 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
-
+import { IonButton, IonContent, IonFooter, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { NavigationService } from '../../services/navigation.service'; //SERVICIOS 
 @Component({
   selector: 'app-aplicaciones',
   templateUrl: './aplicaciones.page.html',
   styleUrls: ['./aplicaciones.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonFooter, IonButton]
 })
 export class AplicacionesPage implements OnInit {
 
-  constructor() { }
-
   ngOnInit() {
+  }
+
+   constructor(private navigationService: NavigationService) {}
+    
+    
+      categoriaSeleccionadaId: string = 'web';
+    
+    goToInicio() {
+      this.navigationService.navToHome(); 
+    }
+    goToProyectosMultiplataforma() {
+    this.navigationService.navToProyectosMultiplataforma(); 
+    }
+    goToProyectosApp() {
+    this.navigationService.navToProyectosApp(); 
+    }
+    goToProyectosWeb() {
+    this.navigationService.navToProyectosWeb(); 
+    }
+  
+    goToLinkedIn() {
+    window.open('https://www.linkedin.com/in/isabel-carrasco-gallego', '_blank');
   }
 
 }

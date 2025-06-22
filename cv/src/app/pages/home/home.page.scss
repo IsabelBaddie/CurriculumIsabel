@@ -27,6 +27,7 @@
 }*/
 
 :root {
+  --rosa-claro: #f5c4da;
   --rosa-medio: #f4a3c8;
   --rosa-oscuro: #b46494;
   --negro: #2d182d;
@@ -34,6 +35,11 @@
   --cereza-oscuro: #8c2c44; 
   --azul: #294459; 
   --blanco: #ffffff; 
+}
+
+.bg-rosaclaro {
+  background-color: var(--rosa-claro);
+  
 }
 
 .bg-rosamedio {
@@ -64,9 +70,18 @@
   color: var(--azul);
 }
 
+.text-cereza {
+  color: var(--cereza-oscuro) !important;
+}
+
 .text-blanco {
   color: var(--blanco);
 }
+
+.text-rosaclaro {
+  color: var(--rosa-claro);
+}
+
 .bg-degradado-multiple {
   background: linear-gradient(to right, #b46494, #d17eb0, #f4a3c8);
 }
@@ -76,3 +91,29 @@ ion-button.bg-blanco {
   --border-color: var(--blanco);
 }
 
+.contenedor-principal {
+  padding: 40px 20px; /* Arriba/abajo 40px, lados 20px */
+}
+
+ion-content.bg-rosaclaro {
+  --background: var(--rosa-claro); 
+}
+
+.link-sin-subrayado {
+  text-decoration: none;
+  color: var(--azul);
+  transition: color 0.3s ease;
+}
+
+.link-sin-subrayado:hover {
+  color: var(--cereza-medio); /* o el color que prefieras */
+}
+
+ion-item.bg-cerezamedio::part(native) {
+  background-color: #c42454;
+}
+
+ion-list {
+  margin: 0 !important;
+  padding: 0 !important;
+}

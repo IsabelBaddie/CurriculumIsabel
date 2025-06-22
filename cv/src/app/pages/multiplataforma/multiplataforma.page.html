@@ -1,13 +1,36 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>multiplataforma</ion-title>
+<ion-header class="">
+  <ion-toolbar class="bg-degradado-multiple p-4" color="bg-degradado-multiple">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+
+      <!-- IZQUIERDA: Logo + navegación -->
+      <div style="display: flex; align-items: center; flex-wrap: wrap;" class="text-blanco">
+        <h2>🎀</h2>
+        
+        <ion-button fill="clear" (click)="goToInicio()" class="text-white">Isabel Carrasco Gallego CV</ion-button>
+        <ion-button fill="clear" (click)="goToProyectosWeb()" class="text-white">Webs</ion-button>
+        <ion-button fill="clear" (click)="goToProyectosApp()" class="text-white">Aplicaciones</ion-button>
+        <ion-button fill="clear" (click)="goToProyectosMultiplataforma()"
+          class="text-white">Multiplataforma</ion-button>
+
+      </div>
+
+      <!-- DERECHA: Botón -->
+      <div style="display: flex; align-items: center; flex-wrap: wrap;">
+        <ion-button id="linkedin-alert" fill="outline" class="bg-blanco" (click)="goToLinkedIn()">Accede a mi
+          LinkedIn</ion-button>
+
+      </div>
+
+    </div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">multiplataforma</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen class="bg-rosaclaro">
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="bg-degradado-multiple" class="bg-degradado-multiple">
+    <ion-title class="text-white text-center">Isabel Carrasco Gallego ©</ion-title>
+  </ion-toolbar>
+</ion-footer>

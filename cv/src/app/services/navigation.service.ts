@@ -19,9 +19,6 @@ export class NavigationService {
     this.router.navigate(['/home']);
   }
 
-  navToTecnologias() {
-    this.router.navigate(['/tecnologias']);
-  }
 
   navToProyectosWeb() {
     this.router.navigate(['/web']);
